@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdunction With Redux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.2.0/redux.min.js"
+      integrity="sha512-1/8Tj23BRrWnKZXeBruk6wTnsMJbi/lJsk9bsRgVwb6j5q39n0A00gFjbCTaDo5l5XrPVv4DZXftrJExhRF/Ug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div class="w-full h-10 flex justify-center align-middle mt-16">
+      <h1 class="text-2xl">Simple Counter</h1>
+    </div>
+    <div class="w-full flex justify-center align-middle mt-4">
+      <div class="w-2/5 h-40 flex flex-col bg-slate-400 shadow-xl rounded-sm">
+        <div class="flex justify-center align-middle text-3xl mt-4">
+          <h1 id="counter"></h1>
+        </div>
+        <div class="flex justify-evenly align-middle mt-4">
+          <button
+            id="increment"
+            class="bg-green-200 shadow-lg hover:bg-green-600 rounded-md h-10 w-32"
+          >
+            Increment
+          </button>
+          <button
+            id="decrement"
+            class="bg-orange-300 shadow-lg hover:bg-orange-600 rounded-md h-10 w-32"
+          >
+            Decrement
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
